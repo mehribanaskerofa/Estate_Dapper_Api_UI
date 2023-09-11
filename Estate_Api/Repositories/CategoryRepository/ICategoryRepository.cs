@@ -1,5 +1,6 @@
 ﻿using Estate_Api.Dtos.CategoryDtos;
 
+
 namespace Estate_Api.Repositories.CategoryRepository
 {
     public interface ICategoryRepository
@@ -10,4 +11,5 @@ namespace Estate_Api.Repositories.CategoryRepository
         void UpdateCategory(UpdateCategoryDto categoryDto);
         Task<GetByIDCategoryDto> GetCategory(int id);
     }
+
 }
