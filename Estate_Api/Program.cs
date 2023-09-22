@@ -4,6 +4,7 @@ using Estate_Api.Repositories.CategoryRepository;
 using Estate_Api.Repositories.PopularLocationRepositories;
 using Estate_Api.Repositories.ProductRepository;
 using Estate_Api.Repositories.ServiceRepository;
+using Estate_Api.Repositories.TestimonialRepositories;
 using Estate_Api.Repositories.WhoWeAreRepository;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -16,6 +17,7 @@ builder.Services.AddTransient<IWhoWeAreDetailRepository, WhoWeAreDetailRepositor
 builder.Services.AddTransient<IServiceRepository, ServiceRepository>();
 builder.Services.AddTransient<IBottomGridRepository, BottomGridRepository>();
 builder.Services.AddTransient<IPopularLocationRepository, PopularLocationRepository>();
+builder.Services.AddTransient<ITestimonialRepository, TestimonialRepository>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
